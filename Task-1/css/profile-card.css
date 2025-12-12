@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 360px;
+  background: #f9ffff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  background: #0a73c9;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 42px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+.role {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9a9a9a;
+  font-weight: 600;
+}
+
+.bio {
+  margin: 20px 0 25px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.socials a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 20px;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+}
