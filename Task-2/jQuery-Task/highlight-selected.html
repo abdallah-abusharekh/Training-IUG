@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Highlight List Item</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      ul {
+        width: 200px;
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ddd;
+      }
+
+      .active {
+        background-color: #38bdf8;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+      <li>Item Four</li>
+    </ul>
+
+    <script>
+      $(document).ready(function () {
+        $("#list li").click(function () {
+          $("#list li").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

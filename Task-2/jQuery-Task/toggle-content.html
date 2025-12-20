@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Toggle Example</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <button id="toggleBtn">Hide Content</button>
+
+    <div id="content">This content is toggled using jQuery</div>
+
+    <script>
+      $("#toggleBtn").click(function () {
+        $("#content").toggle();
+
+        if ($("#content").is(":visible")) {
+          $(this).text("Hide Content");
+        } else {
+          $(this).text("Show Content");
+        }
+      });
+    </script>
+  </body>
+</html>

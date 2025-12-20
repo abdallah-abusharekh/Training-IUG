@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Accordion</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+      .accordion {
+        width: 300px;
+        border: 1px solid #ccc;
+      }
+
+      .header {
+        background: #e5e7eb;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        font-weight: bold;
+      }
+
+      .content {
+        display: none;
+        padding: 10px;
+        background: #f9fafb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="header">Section 1</div>
+      <div class="content">Content for section 1</div>
+
+      <div class="header">Section 2</div>
+      <div class="content">Content for section 2</div>
+
+      <div class="header">Section 3</div>
+      <div class="content">Content for section 3</div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".header").click(function () {
+          const content = $(this).next(".content");
+          $(".content").not(content).slideUp();
+          content.slideToggle();
+        });
+      });
+    </script>
+  </body>
+</html>

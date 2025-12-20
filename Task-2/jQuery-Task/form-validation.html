@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Form Validation</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Name" />
+      <input type="number" id="number" placeholder="Number" />
+
+      <button type="submit">Submit</button>
+      <p class="error" style="display: none; color: red; margin-top: 5px">
+        All fields are required
+      </p>
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        $("#myForm").submit(function (e) {
+          let name = $("#name").val().trim();
+          let email = $("#number").val().trim();
+
+          if (name === "" || email === "") {
+            e.preventDefault();
+            $(".error").show();
+          } else {
+            $(".error").hide();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
