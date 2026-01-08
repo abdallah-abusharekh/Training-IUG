@@ -1,0 +1,153 @@
+:root {
+  --dark: #0b1220;
+  --darker: #070b14;
+  --red: #e11d48;
+  --red-hover: rgba(243, 22, 70, 0.905);
+  --main-transition: 0.3s;
+}
+
+@media (max-width: 1200px) {
+  .top-sellings {
+    gap: 1.8rem 0;
+  }
+  .top-seller-wrapper {
+    width: 40%;
+  }
+}
+
+/* //////////////////////////// */
+@media (max-width: 944px) {
+  .main-header {
+    gap: 1.8rem;
+  }
+  .main-header h1 {
+    font-size: 2rem;
+  }
+  .top-header {
+    font-size: 12px;
+  }
+  .menu-btn {
+    display: flex !important;
+  }
+  .search-wrapper {
+    width: 100%;
+  }
+  .close-nav {
+    display: block;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100dvh;
+    padding: 20px;
+    background-color: #0b1220f3;
+    z-index: 1000;
+
+    transform: translateX(-120%);
+    transition: transform 0.4s ease;
+  }
+
+  nav.open {
+    transform: translateX(0);
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 2.4rem;
+    width: 100%;
+  }
+
+  .nav-link a {
+    color: #fff;
+  }
+
+  .nav-btns {
+    margin-left: auto;
+  }
+  .icon-box {
+    font-size: 18px;
+  }
+  .nav-btns p {
+    font-size: 10px;
+  }
+  .product-wrapper {
+    flex: 0 0 calc(33.5% - 1rem);
+  }
+
+  #sales img {
+    display: none;
+  }
+  .cta-container {
+    font-size: 1.4rem;
+  }
+  .top-seller-wrapper {
+    width: 50%;
+  }
+}
+/* /////////////////////////// */
+
+@media (max-width: 740px) {
+  .product-wrapper {
+    flex: 0 0 calc(50% - 1rem);
+  }
+  .top-seller-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    padding: 1.2rem 3.2rem;
+  }
+  .top-header {
+    gap: 10px;
+  }
+  .search-wrapper input {
+    border-radius: 50px 0 0 50px;
+  }
+  .search-wrapper select {
+    display: none;
+  }
+
+  .products-head ul {
+    display: none;
+  }
+
+  .sales-content h2 {
+    font-size: 1.4rem;
+  }
+  .sales-content p {
+    font-size: 1rem;
+  }
+  .sales-content button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .sales-time div {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+  .product-wrapper {
+    flex: 0 0 100%;
+  }
+  .product-wrapper::scroll-marker {
+    display: block;
+  }
+  .top-sellings {
+    gap: 1.8rem;
+  }
+  .top-seller-wrapper {
+    width: 100%;
+  }
+  .cta-container p {
+    font-size: 1.2rem;
+  }
+  .footer-tail p {
+    font-size: 12px;
+  }
+}
